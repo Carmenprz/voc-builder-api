@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Album extends Migration
+class CreateAlbumsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -14,6 +14,8 @@ class Album extends Migration
     public function up()
     {
         Schema::create('albums', function (Blueprint $table) {
+            $table->id();
+            $table->timestamps();
             $table->string('name');
         });
     }
@@ -25,6 +27,6 @@ class Album extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('albums');
     }
 }
