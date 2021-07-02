@@ -3,7 +3,7 @@
 
 This is an API for my voc-builder App. 
 
-## About voc-builder App
+## About [voc-builder](https://github.com/Carmenprz/Voc-builder) App
 
 An application to create your own vocabulary card albums, to memorize them more 
 easily.
