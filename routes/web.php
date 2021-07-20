@@ -17,5 +17,3 @@ use App\Http\Controllers\AlbumController;
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::apiResource('albums', AlbumController::class);
